@@ -1,0 +1,11 @@
+﻿  Game.cpp
+Game.obj : error LNK2001: 无法解析的外部符号 SDL_Log
+Game.obj : error LNK2001: 无法解析的外部符号 SDL_Init
+Game.obj : error LNK2001: 无法解析的外部符号 SDL_DestroyWindow
+Game.obj : error LNK2001: 无法解析的外部符号 SDL_Quit
+Game.obj : error LNK2001: 无法解析的外部符号 "private: void __cdecl Game::GenerateOutput(void)" (?GenerateOutput@Game@@AEAAXXZ)
+Game.obj : error LNK2001: 无法解析的外部符号 "private: void __cdecl Game::UpdateGame(void)" (?UpdateGame@Game@@AEAAXXZ)
+Game.obj : error LNK2001: 无法解析的外部符号 "private: void __cdecl Game::ProcessInput(void)" (?ProcessInput@Game@@AEAAXXZ)
+Game.obj : error LNK2001: 无法解析的外部符号 SDL_CreateWindow
+MSVCRT.lib(exe_main.obj) : error LNK2001: 无法解析的外部符号 main
+F:\Cpp Game Engine\CPP Game Engine\Engine\x64\Release\Engine.exe : fatal error LNK1120: 9 个无法解析的外部命令
