@@ -13,27 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\Chapter1">
-      <UniqueIdentifier>{a7bb63b1-3916-454d-858f-e5b449ce6e7e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\Chapter1">
-      <UniqueIdentifier>{ab986981-3d57-4187-9636-bcced862d31f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Phong.h">
-      <Filter>头文件\Chapter1</Filter>
-    </ClInclude>
     <ClInclude Include="Vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Phong.cpp">
-      <Filter>源文件\Chapter1</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>源文件\Chapter1</Filter>
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

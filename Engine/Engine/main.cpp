@@ -1,12 +1,8 @@
-#include "Phong.h"
-
-using namespace phong;
-int main(int argc, char** argv) {
-
-	Game game;
-	bool success = game.Initialize();
-
-	if (success)	game.GameLoop();
-	game.Shutdown();
+#include<iostream>
+using namespace std;
+int main(int* argc, char** argv) {
+	cout << "hello world";
+	char c;
+	cin >> c;
 	return 0;
 }
