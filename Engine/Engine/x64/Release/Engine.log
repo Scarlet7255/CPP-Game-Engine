@@ -1,11 +1,7 @@
-﻿  Game.cpp
-Game.obj : error LNK2001: 无法解析的外部符号 SDL_Log
-Game.obj : error LNK2001: 无法解析的外部符号 SDL_Init
-Game.obj : error LNK2001: 无法解析的外部符号 SDL_DestroyWindow
-Game.obj : error LNK2001: 无法解析的外部符号 SDL_Quit
-Game.obj : error LNK2001: 无法解析的外部符号 "private: void __cdecl Game::GenerateOutput(void)" (?GenerateOutput@Game@@AEAAXXZ)
-Game.obj : error LNK2001: 无法解析的外部符号 "private: void __cdecl Game::UpdateGame(void)" (?UpdateGame@Game@@AEAAXXZ)
-Game.obj : error LNK2001: 无法解析的外部符号 "private: void __cdecl Game::ProcessInput(void)" (?ProcessInput@Game@@AEAAXXZ)
-Game.obj : error LNK2001: 无法解析的外部符号 SDL_CreateWindow
-MSVCRT.lib(exe_main.obj) : error LNK2001: 无法解析的外部符号 main
-F:\Cpp Game Engine\CPP Game Engine\Engine\x64\Release\Engine.exe : fatal error LNK1120: 9 个无法解析的外部命令
+﻿  Phong.cpp
+  正在生成代码
+  2 of 29 functions ( 6.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  Engine.vcxproj -> F:\Cpp Game Engine\CPP Game Engine\Engine\x64\Release\Engine.exe

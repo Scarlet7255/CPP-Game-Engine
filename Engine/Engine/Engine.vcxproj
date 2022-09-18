@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\include;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\include;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\include;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_ttf-2.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\lib\x64;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;shell32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\lib\x64;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\lib\x64;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_ttf-2.20.1\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;shell32.lib;SDL2_ttf.lib</AdditionalDependencies>
       <DelayLoadDLLs>
       </DelayLoadDLLs>
     </Link>
@@ -123,24 +123,26 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\include;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\include;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\include;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_ttf-2.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\lib\x64;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;shell32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2-2.24.0\lib\x64;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_image-2.6.2\lib\x64;F:\Cpp Game Engine\CPP Game Engine\Engine\External\SDL2_ttf-2.20.1\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;shell32.lib;SDL2_ttf.lib</AdditionalDependencies>
       <DelayLoadDLLs>
       </DelayLoadDLLs>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
+    <ClInclude Include="Phong.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Phong.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
