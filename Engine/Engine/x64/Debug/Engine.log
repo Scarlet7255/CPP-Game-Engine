@@ -1,2 +1,8 @@
-﻿  main.cpp
+﻿  Behaviour.cpp
+  Game.cpp
+  GameObject.cpp
+F:\Cpp Game Engine\CPP Game Engine\Engine\Engine\GameObject.cpp(15,31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+F:\Cpp Game Engine\CPP Game Engine\Engine\Engine\GameObject.cpp(33,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Transform.cpp
+  正在生成代码...
   Engine.vcxproj -> F:\Cpp Game Engine\CPP Game Engine\Engine\x64\Debug\Engine.exe
