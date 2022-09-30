@@ -13,38 +13,80 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Components">
+      <UniqueIdentifier>{c2e4865b-5783-4230-8a69-ccbcc858b71e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Engine Skeleton">
+      <UniqueIdentifier>{c6770a8d-8a7d-4479-aeac-445074da0c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Engine Skeleton">
+      <UniqueIdentifier>{190ad344-d25a-4224-bb88-29bcfda7e36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Components">
+      <UniqueIdentifier>{29e5d1b2-f732-46a5-858f-0acbe5997e3c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Transform.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="Behaviour.h">
+      <Filter>头文件\Engine Skeleton</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
+      <Filter>头文件\Engine Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>头文件\Engine Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>头文件\Engine Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>头文件\Engine Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>头文件\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimSprite.h">
+      <Filter>头文件\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Behaviour.h">
+    <ClInclude Include="RollingBG.h">
+      <Filter>头文件\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundObj.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Transform.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObject.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="Behaviour.cpp">
+      <Filter>源文件\Engine Skeleton</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
+      <Filter>源文件\Engine Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件\Engine Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>源文件\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>源文件\Engine Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimSprite.cpp">
+      <Filter>源文件\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Behaviour.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RollingBG.cpp">
+      <Filter>源文件\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundObj.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

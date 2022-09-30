@@ -1,4 +1,7 @@
 #pragma once
+#ifndef  BEHAVIOUR_H
+#define BEHAVIOUR_H
+
 class Behaviour
 {
 public:
@@ -7,8 +10,9 @@ public:
 	virtual ~Behaviour();
 	int GetUpdateOrder() const { return mUpdateOrder; };
 	virtual void Update(float deltaTime);
-private:
+protected:
 	int mUpdateOrder;
 	class GameObject* mgameObject;
 };
 
+#endif // ! BEHAVIOUR_H

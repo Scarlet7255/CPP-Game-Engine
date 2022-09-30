@@ -1,8 +1,14 @@
+
+#pragma once
+#ifndef  GAMEOBJECT_H
+#define GAMEOBJECT_H
+
 #include<vector>
 #include<string>
+#include<unordered_map>
 #include "Transform.h"
 #include "Game.h"
-#pragma once
+
 using namespace std;
 	class GameObject
 	{
@@ -16,7 +22,7 @@ using namespace std;
 		};
 
 		// constructor and destructor
-		GameObject(Game* game, string name);
+		GameObject(class  Game* , string name);
 		virtual ~GameObject();
 
 		// add and remove gameobject
@@ -24,13 +30,16 @@ using namespace std;
 		void AddComponents(vector<class Behaviour*> behaviours);
 		void RemoveComponent(class Behaviour* behaviour);
 
-		Transform* GetTransform() const { return mtransform; };
+		Game* GetOwner() const { return mOwner; };
+
+		Transform* GetTransform() const { return mTransform; };
 
 		string GetName() const { return mName; };
 
 		void SetName(string name) { mName = name; };
 
 		State GetState() const { return mState; };
+		bool IsActive() const { return mState == EActive; };
 
 		void SetActive(bool activeSelf) {
 			if (mState == EDead) return;
@@ -46,17 +55,21 @@ using namespace std;
 		void Update(float deltaTime);
 		//update all components attached to the game object
 		void UpdateComponents(float deltaTime);
+		//call when add the gameobject to the world
+		virtual void Awake();
 		//any specific update code
 		virtual void UpdateGameObject(float deltaTime);
+	
+	protected:
+		// transform informations
+		Transform* const mTransform = new Transform();
+		// components container
+		vector<class Behaviour*> mComponents;
+		string mName;
+		Game* mOwner;
 
 	private:
 		// gameObject's state
 		State mState;
-		// transform informations
-		Transform* const mtransform = new Transform();
-		// components container
-		vector<class Behaviour*> mComponents;
-		class Game* game;
-		string mName;
 	};
-
+#endif // ! GAMEOBJECT_H

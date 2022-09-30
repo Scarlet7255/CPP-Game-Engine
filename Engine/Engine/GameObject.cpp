@@ -1,17 +1,19 @@
 #include "GameObject.h"
+#include "Game.h"
 #include "Behaviour.h"
 #include <string>
 #include <algorithm>
 using namespace std;
 
 #pragma region Constructor And Destructor
-GameObject::GameObject(Game* owner, string name = "GameObject") {
-	game = owner;
+
+GameObject::GameObject(Game* owner, string name) {
 	mName = name;
+	mOwner = owner;
 }
 
 GameObject::~GameObject() {
-	delete mtransform;
+	delete mTransform;
 	int size = mComponents.size();
 	for (int i = 0; i < size; i++) {
 		delete mComponents[i];
@@ -49,18 +51,21 @@ void GameObject::RemoveComponent(Behaviour* behaviour) {
 
 #pragma region Update 
 
+void GameObject::Awake() {
+};
+
 void GameObject::Update(float deltaTime) {
 	if(mState==EActive) UpdateComponents(deltaTime);
+	UpdateGameObject(deltaTime);
 }
 
 void GameObject::UpdateComponents(float deltaTime) {
-	for (auto it = mComponents.begin(); it != mComponents.end(); it++) {
+	for (auto it = mComponents.begin(); it != mComponents.end(); ++it) {
 		(* it)->Update(deltaTime);
 	}
 }
 
 void GameObject::UpdateGameObject(float deltaTime) {
-
 }
 #pragma endregion
 
