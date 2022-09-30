@@ -734,10 +734,6 @@ void RollingBG::Update(float deltaTime) {
 }
 ```
 
-<div align = "center" >
-<img src = "./forest.png" width = 60% height = 60%/ >
-<h4>构图上首位相连的背景图</h4>
-</div>
 &emsp;&emsp;在 Update 中，我们需要完成更新 srcrect 区域的任务。我们根据我们定义的方向对图像进行滚动，当滚动的距离有图片宽度(或者长度，取决于是水平还是竖直方向滚动)一半时，将 srcrect 设置成原点。因此，我们需要用到 mTexWidth 和 mTexHeight 的帮助。
 
 &emsp;&emsp;Draw 没什么好说的。同理，为了方便，我们定义一个叫 BackgroundObj 的类来绘制背景。其没有别的函数声明，只是实现了自己的 Awake 函数。
@@ -757,7 +753,7 @@ void BackgroundObj::Awake() {
 
 <div align = "center" >
 <img src = "./RollingBackground.gif" width = 40% height = 40%/ >
-<h4>构图上首位相连的背景图</h4>
+<h4>循环背景</h4>
 </div>
 
 ### 2.3.1 视差背景
