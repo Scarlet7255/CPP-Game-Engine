@@ -12,7 +12,7 @@
 
 ## 目录
 
-### Chapter1 [游戏编程概述](./Notes/Chap1%20intro/Chap1.md)
+### Chapter1 [游戏编程概述](./Notes/Chap1%20intro/Chapter1.md)
 
 #### 内容
 
@@ -21,10 +21,16 @@
 3. 学习如何将画面画到屏幕上(双缓冲技术，垂直同步技术)
 4. 制作一个简单的 Phong 游戏
 
-### Chapter2 [游戏对象和 2D 图像](./Notes/Chap2%20游戏对象和2D图像/Chap2.md)
+### Chapter2 [游戏对象和 2D 图像](./Notes/Chap2%20游戏对象和2D图像/Chapter2.md)
 
 #### 内容
 
 1. 学习常见的游戏并且明白其优缺点
 2. 学习如何使用 SDL 制作 2D 精灵动画
 3. 学习制作简单的循环滚动背景
+
+### Chapter3 [向量和基础物理](./Notes/Chap3%20向量和基础物理/Chapter3.md)
+
+1. 学习最基础的向量运算
+2. 学习新的输入方式
+3. 学习最基本的碰撞检测
