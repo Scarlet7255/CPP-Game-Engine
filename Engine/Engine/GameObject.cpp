@@ -19,6 +19,10 @@ GameObject::~GameObject() {
 		delete mComponents[i];
 	}
 }
+
+void GameObject::Destory() {
+	mState = EDead;
+}
 #pragma endregion
 
 #pragma region Add and Remove Component
@@ -47,6 +51,11 @@ void GameObject::RemoveComponent(Behaviour* behaviour) {
 	}
 	delete behaviour;
 };
+
+void GameObject::AddCollider(CircleCollider* collider) {
+	AddComponent(collider);
+	GetOwner()->AddCollider(collider);
+}
 #pragma endregion
 
 #pragma region Update 
@@ -69,6 +78,18 @@ void GameObject::UpdateGameObject(float deltaTime) {
 }
 #pragma endregion
 
+#pragma region Process Input
+void GameObject::ProcessInput(const uint8_t* keystate) {
+	if (mState != EActive) return;
+	for (auto it = mComponents.begin(); it != mComponents.end(); it++) {
+		(*it)->ProcessInput(keystate);
+	}
+	ActorInput(keystate);
+}
+
+void GameObject::ActorInput(const uint8_t* keystate) {
+}
+#pragma endregion
 
 
 

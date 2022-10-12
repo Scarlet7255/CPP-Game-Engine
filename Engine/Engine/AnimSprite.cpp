@@ -28,14 +28,14 @@ void AnimSprite::Draw(SDL_Renderer* renderer) {
 
 	SDL_Rect r;
 
-	Vector2 scale = mgameObject->GetTransform()->scale;
+	Eigen::Vector2f scale = mgameObject->GetTransform()->scale;
 	//set sprite scale draw on the screen
-	r.w = (int)(scale.x * mTexWidth * mSpriteScale.x);
-	r.h = (int)(scale.y * mTexHeight * mSpriteScale.y);
+	r.w = (int)(scale[0] * mTexWidth * mSpriteScale[0]);
+	r.h = (int)(scale[1] * mTexHeight * mSpriteScale[1]);
 	// set where sprite draw on the screen
-	Vector2 pos = mgameObject->GetTransform()->position;
-	r.x = (int)(pos.x - r.w /2);
-	r.y = (int)(pos.y - r.h / 2);
+	Eigen::Vector2f pos = mgameObject->GetTransform()->position;
+	r.x = (int)(pos[0] - r.w /2);
+	r.y = (int)(pos[1] - r.h / 2);
 
 	SDL_Rect* rec = mAnimTextures.size() < 1? nullptr: &mAnimTextures[mRectIdx].srcret;
 	float rotation = mgameObject->GetTransform()->rotation;

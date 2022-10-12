@@ -10,3 +10,6 @@ Behaviour::~Behaviour() {
 
 void Behaviour::Update(float deltaTime) {
 }
+
+void Behaviour::ProcessInput(const uint8_t* keystate) {
+}

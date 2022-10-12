@@ -25,6 +25,12 @@
     <Filter Include="源文件\Components">
       <UniqueIdentifier>{29e5d1b2-f732-46a5-858f-0acbe5997e3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Chapter2_3">
+      <UniqueIdentifier>{3ce404bc-9aa9-40de-958d-be76e085ceed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Chapter2_3">
+      <UniqueIdentifier>{44ae1315-36b9-4a61-b89b-f9d4b2253e7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Behaviour.h">
@@ -36,10 +42,7 @@
     <ClInclude Include="GameObject.h">
       <Filter>头文件\Engine Skeleton</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.h">
-      <Filter>头文件\Engine Skeleton</Filter>
-    </ClInclude>
-    <ClInclude Include="Vector.h">
+    <ClInclude Include="TransformComponent.h">
       <Filter>头文件\Engine Skeleton</Filter>
     </ClInclude>
     <ClInclude Include="Sprite.h">
@@ -48,14 +51,32 @@
     <ClInclude Include="AnimSprite.h">
       <Filter>头文件\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Character.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="RollingBG.h">
       <Filter>头文件\Components</Filter>
     </ClInclude>
+    <ClInclude Include="BasicMovement.h">
+      <Filter>头文件\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>头文件\Chapter2_3</Filter>
+    </ClInclude>
     <ClInclude Include="BackgroundObj.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\Chapter2_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Obstacle.h">
+      <Filter>头文件\Chapter2_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Angle.h">
+      <Filter>头文件\Chapter2_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>头文件\Chapter2_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet2.h">
+      <Filter>头文件\Chapter2_3</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleCollider.h">
+      <Filter>头文件\Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -71,14 +92,8 @@
     <ClCompile Include="Sprite.cpp">
       <Filter>源文件\Components</Filter>
     </ClCompile>
-    <ClCompile Include="Transform.cpp">
-      <Filter>源文件\Engine Skeleton</Filter>
-    </ClCompile>
     <ClCompile Include="AnimSprite.cpp">
       <Filter>源文件\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="Character.cpp">
-      <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>资源文件</Filter>
@@ -86,8 +101,29 @@
     <ClCompile Include="RollingBG.cpp">
       <Filter>源文件\Components</Filter>
     </ClCompile>
+    <ClCompile Include="BasicMovement.cpp">
+      <Filter>源文件\Components</Filter>
+    </ClCompile>
     <ClCompile Include="BackgroundObj.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\Chapter2_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>源文件\Chapter2_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Obstacle.cpp">
+      <Filter>源文件\Chapter2_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Angle.cpp">
+      <Filter>源文件\Chapter2_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>源文件\Chapter2_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet2.cpp">
+      <Filter>源文件\Chapter2_3</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleCollider.cpp">
+      <Filter>源文件\Components</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

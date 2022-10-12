@@ -1,5 +1,10 @@
-﻿  BackgroundObj.cpp
-F:\Cpp Game Engine\CPP Game Engine\Engine\Engine\RollingBG.h(23,35): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+﻿  Character.cpp
+F:\Cpp Game Engine\CPP Game Engine\Engine\External\eigen-3.4.0\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\Cpp Game Engine\CPP Game Engine\Engine\External\eigen-3.4.0\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\Cpp Game Engine\CPP Game Engine\Engine\External\eigen-3.4.0\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   main.cpp
+F:\Cpp Game Engine\CPP Game Engine\Engine\External\eigen-3.4.0\Eigen\src\Core\arch\Default\Half.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\Cpp Game Engine\CPP Game Engine\Engine\External\eigen-3.4.0\Eigen\src\Core\arch\Default\BFloat16.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+F:\Cpp Game Engine\CPP Game Engine\Engine\External\eigen-3.4.0\Eigen\src\Core\arch\Default\GenericPacketMathFunctions.h(676,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   正在生成代码...
   Engine.vcxproj -> F:\Cpp Game Engine\CPP Game Engine\Engine\x64\Debug\Engine.exe

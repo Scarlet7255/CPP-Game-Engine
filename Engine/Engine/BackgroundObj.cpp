@@ -16,8 +16,9 @@ void BackgroundObj::SetMainBackground() {
 	bg->SetRollingArea(0, 0, 512, 512);
 	bg->SetRollingSpeed(30.f);
 	bg->SetRollingDir(RollingBG::Right);
-	bg->SetSpriteScale(Vector2{ 1.0f, 1.8f });
-	bg->SetSpriteOffset(Vector2{ 0.f, 140.f });
+	bg->SetSpriteScale(Eigen::Vector2f{ 1.0f, 1.8f });
+	bg->SetSpriteScale(Eigen::Vector2f{ 1.0f, 1.8f });
+	bg->SetSpriteOffset(Eigen::Vector2f{ 0.f, 140.f });
 	AddComponent(bg);
 }
 
@@ -27,7 +28,7 @@ void BackgroundObj::SetSecBackground() {
 	bg->SetRollingArea(0, 0, 512, 512);
 	bg->SetRollingSpeed(50.f);
 	bg->SetRollingDir(RollingBG::Right);
-	bg->SetSpriteScale(Vector2{ 1.0f, 1.0f });
-	bg->SetSpriteOffset(Vector2{ 0.f, 250.f });
+	bg->SetSpriteScale(Eigen::Vector2f{ 1.0f, 1.0f });
+	bg->SetSpriteOffset(Eigen::Vector2f{ 0.f, 250.f });
 	AddComponent(bg);
 }

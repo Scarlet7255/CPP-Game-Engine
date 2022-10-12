@@ -7,6 +7,7 @@
 #include <string>
 #include <unordered_map>
 #include "GameObject.h"
+#include "CircleCollider.h"
 
 using namespace std;
 struct WindowSize {
@@ -28,13 +29,16 @@ public:
 	class GameObject* CreateGameObject(string name = "GameObject");
 	// add GameObject
 	void AddGameObject(class GameObject*);
-	// remove GameObject
-	void RemoveGameObject(class GameObject*);
-
 
 	SDL_Texture* GetTexture(string);
-	void AddSprite(class Sprite*);
 
+	//global components
+	void AddSprite(class Sprite*);
+	void AddCollider(CircleCollider*);
+	bool CollideDetect(const CircleCollider*);
+
+	void RemoveSprite(class Sprite*);
+	void RemoveCollider(class CircleCollider*);
 private:
 	void ProcessInput();
 	void UpdateGame();
@@ -61,8 +65,9 @@ private:
 	vector<class GameObject*> activeList;
 	vector<class GameObject*> pendingList;
 	vector<class GameObject*> deadList;
-
 	vector<class Sprite*> mSpriteList;
+	vector<class CircleCollider*> mColliderList;
+
 };
 #endif // !GAME_H
 

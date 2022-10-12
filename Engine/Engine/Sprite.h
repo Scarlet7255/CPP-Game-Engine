@@ -4,6 +4,8 @@
 #include "Behaviour.h"
 #include "GameObject.h"
 #include "SDL.h"
+#include <Eigen/Core>
+
 class Sprite :
     public Behaviour
 {
@@ -18,9 +20,9 @@ public:
     int GetTextureHeight() const { return mTexHeight; };
     int GetTextureWidtht() const { return mTexWidth; };
     
-    Vector2 GetSpriteScale() const { return mSpriteScale; };
-    void SetSpriteScale(Vector2 scale) { mSpriteScale = scale; };
-    void SetSpriteOffset(Vector2 offset) { mSpriteOffset= offset; };
+    Eigen::Vector2f GetSpriteScale() const { return mSpriteScale; };
+    void SetSpriteScale(Eigen::Vector2f scale) { mSpriteScale = scale; };
+    void SetSpriteOffset(Eigen::Vector2f offset) { mSpriteOffset= offset; };
 protected:
     // texture to draw
     SDL_Texture* mTexture;
@@ -29,8 +31,8 @@ protected:
     // Width/Height of texture
     int mTexWidth;
     int mTexHeight;
-    Vector2 mSpriteScale{1.f,1.f};
-    Vector2 mSpriteOffset{ 0.f,0.f };
+    Eigen::Vector2f mSpriteScale{1.f,1.f};
+    Eigen::Vector2f mSpriteOffset{ 0.f,0.f };
 };
 
 #endif
